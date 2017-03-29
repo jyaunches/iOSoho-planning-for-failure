@@ -1,0 +1,40 @@
+Designing for Hardware Failure
+
+Disparate failure points
+
+---------
+
+Grow at high level
+
+---------
+
+Grow techinical need
+
+---------
+
+Network failures
+
+Timeouts
+
+Operation
+- many parts can go wrong
+
+---------
+
+Communicating reason back to user
+
+---------
+
+Why not operation queue?
+
+- could spend time on this... would require example project.
+
+---------
+
+Our architecture
+
+---------
+
+Visibility w/ Logs
+
+---------
