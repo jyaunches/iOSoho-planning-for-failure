@@ -1,0 +1,74 @@
+Architecting for Changing Hardware
+
+Intro:
+- Challenges often faced developing a connected app for a piece of hardware also being developed -> Disparate failure points
+
+- Architecture -> failures transparent
+
+
+Take-away:
+- If you've never worked with a connected device... a small window into the difference and similarities between standard integration point problems
+
+- If you worked with a connected device... you'll get a window into how we've handled problems.. some of which you may have seen.. some not.
+
+Who am I?
+- 10 years engineering... standard web development -> iOS 5 years ago. Hardware connected apps, 3 years.
+
+---------
+
+Grow at high level
+
+We are building this box 
+-> has integrated sensors detecting things like soil moisture and temperature
+-> these drive a smart automated watering system
+-> hoping to make food growing more accessible to the average person
+
+---------
+
+Grow techinical need
+
+Device is smart… takes care of your plants for you.
+
+Phone is gateway to bed. Sends instructions: Update water program, retrieve sensor data, receiving status issues like low power or errors.
+
+User does not see any of this.
+
+-----
+
+How typical exchange happens.
+
+Connect -> Send series of commands -> Determine outcome
+
+Ex. Setup bed
+
+SetTime -> Get Battery -> Retrieve Unique Identifier -> Persist Bed to Grow API -> Tell Bed it's Owned -> Retrieve Bed Status -> Disconnect 
+
+
+---------
+
+Network failures
+
+Timeouts
+
+Operation
+- many parts can go wrong
+
+---------
+
+Communicating reason back to user
+
+---------
+
+Why not operation queue?
+
+- could spend time on this... would require example project.
+
+---------
+
+Our architecture
+
+---------
+
+Visibility w/ Logs
+
+---------
