@@ -1,0 +1,75 @@
+----------- Building Apps For Hardware -----------
+
+Hardware devices are doing things.. in the age of the internet of things.. we need to communicate with them. Get information and push instructions.
+ 
+Apps really only directly interact with hardware when you're dealing with a Bluetooth enabled hardware device... And they're transferring data back and forth.
+ 
+This is when it gets interesting and quite low level for the iOS developers..
+ 
+The alternative (less interesting) way to build apps for hardware is to get your hardware to communicate directly to servers.
+ 
+(fun relocated to server development)
+ 
+Ok, so it's probably pretty obvious now that I'm going to be talking about building apps that use CoreBluetooth.
+ 
+So, you may be asking yourself... 'wait a second. Core Bluetooth has been around 5 years) the API hasn't changed.
+ 
+What's this woman going to to talk about that is new and interesting?
+ 
+Good question.
+ 
+Not going to talk about core Bluetooth. Besides saying that post Apple watch it's finally become stable. Well done Apple.
+ 
+----------- This Talk -----------
+
+I'm going to talk about development process and strategy paradigms as we continue to enter the age of the internet of things.
+ 
+App as communication gateway is still a fairly young paradigm.
+ 
+Prior communication gateway strategies apply in some ways but not others
+ 
+Why important now. Hardware startups growing.
+ 
+It's one of challenging things ahead for mobile on the age of AI and machine learning.
+ 
+----------- Challenges -----------
+
+Serial comms offer unique architectural needs.
+ 
+Failures are different / less visible.
+ 
+Often, determination of whether an operation was successful or not has a dependency chain starting with the device continuing on to a server in the cloud and then returning to the device.
+ 
+There are certain things you can do to mitigate these dependencies.. Buffers, queues.
+ 
+But often these things are happening outside the users point of view... So to have the level of granular control you need to effectively both develop the app and field test your hardware device..
+
+----------- Grow as an Example -----------
+
+
+----------- No Visiblity / Granular Control -----------
+ 
+You have to change you architecture to support visibility.
+ 
+You have to build things that bring visibility.
+ 
+I'm going to show you what we built at Grow... How it brings value and visibility every day..
+ 
+Walk through architectural steps taken to support this. (which also happen give us clean maintainable code!)
+ 
+When something fails, we need to know why.
+ 
+Can't rely on the device to debug in the field.
+ 
+The app has to track and log.
+The app has to allow granular control over all functions... Even though some of them may be automatic / away from the users view.
+ 
+Show screen shots.
+
+
+
+
+
+
+
+
